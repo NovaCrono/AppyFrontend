@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Producto</ion-label>
+      <ion-input placeholder="Ingrese Nombre"></ion-input>
+    </ion-item>
+  
+    <ion-list>
+      <ion-item>
+        <ion-select placeholder="Seleccionar Categoría" [multiple]="true">
+          <ion-select-option value="Clasico">Clásico</ion-select-option>
+          <ion-select-option value="Deportivo">Deportivo</ion-select-option>
+          <ion-select-option value="Formal">Formal</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <ion-item>
+      <ion-label>Subtotal</ion-label>
+      <ion-input type="number" placeholder="000"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Cantidad</ion-label>
+      <ion-input type="number" placeholder="000"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-grid class="buton">
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/tabulacion']" routerLinkActive="router-link-active" >Ver Info</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button>Registrar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

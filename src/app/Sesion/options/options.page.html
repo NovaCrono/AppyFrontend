@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>OPCIONES</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-button [routerLink]="['/tabulacion']" routerLinkActive="router-link-active">Ver Información</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button [routerLink]="['/registro']" routerLinkActive="router-link-active">Registrar Datos</ion-button>
+    </ion-item>
+  </ion-list>
+  <ion-button class="logout" [routerLink]="['/home']" routerLinkActive="router-link-active">Cerrar Sesion</ion-button>
+</ion-content>

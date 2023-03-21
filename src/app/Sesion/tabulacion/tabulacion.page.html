@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>tabulacion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>id</ion-col>
+      <ion-col>Producto</ion-col>
+      <ion-col>Categoría</ion-col>
+      <ion-col>Subtotal</ion-col>
+      <ion-col>Detalle</ion-col>
+      <ion-col>Total</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>1</ion-col>
+      <ion-col>Camisa</ion-col>
+      <ion-col>Satín</ion-col>
+      <ion-col>40000</ion-col>
+      <ion-col>5 Und</ion-col>
+      <ion-col>200000</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>2</ion-col>
+      <ion-col>Camisa</ion-col>
+      <ion-col>Jordan</ion-col>
+      <ion-col>19020</ion-col>
+      <ion-col>2 Und</ion-col>
+      <ion-col>38040</ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/option']" routerLinkActive="router-link-active" >Atrás</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-fab>
+          <ion-fab-button [routerLink]="['/registro']" routerLinkActive="router-link-active">
+            <ion-icon name="add"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
